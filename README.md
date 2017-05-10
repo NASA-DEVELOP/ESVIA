@@ -2,12 +2,16 @@
 LANDSAT HISTORICAL FORECASTING 
 
 Overview
+
 —————————
+
 This is a tool to apply NDVI on Landsat imagery to analyze plant health. The intention of using this script is to perform a simple NDVI change detection, create histograms showing data distribution,
 and export the results in order to assess historical and current day vegetation health trends of a given area.
 
 Algorithm
+
 ——————————
+
 For each image:
 -load the Landsat scene and clip to the boundary of desired area.
 -apply NDWI to each imported image and visualize using appropriate bands associated with the Landsat satellite
@@ -29,7 +33,9 @@ Result is positive if NDVI increased, negative if decreased.
 SENTINEL 2 2016 VEGETATION ANALYSIS
 
 Overview
+
 —————————
+
 Google Earth Engine code collected and populated by Hannah Friedrich from the Elkhorn Slough Ecological Forecasting Team II at NASA DEVELOP Ames Research Center in Fall of 2016. 
 
 The following code takes a Sentinel 2A image from August 13, 2016 and applies three different vegetation indices (NDVI, NDI45, and IRECI) and exports them to Google Drive. When using this script, choose an image date which is useful for your study area. For this particular study, August 13th was the closest Sentinel 2 image date to when field data was collected which was compared with imagery analysis. 
@@ -37,7 +43,9 @@ The following code takes a Sentinel 2A image from August 13, 2016 and applies th
 Code is commented step by step, but main workflow is below.
 
 Algorithm
+
 ——————————
+
 1) Add study area kml as a fusion table feature collection. 
 2) Create variable which is your study area.
 3) Center map on study area
